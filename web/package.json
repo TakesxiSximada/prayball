@@ -11,6 +11,7 @@
   "dependencies": {
     "bower": "^1.4.1",
     "gulp": "^3.8.11",
-    "react-tools": "^0.13.2"
+    "react-tools": "^0.13.2",
+    "webpack": "^1.8.11"
   }
 }
