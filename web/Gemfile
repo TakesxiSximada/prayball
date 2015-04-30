@@ -2,4 +2,7 @@
 source "https://rubygems.org"
 
 # gem "rails"
+gem "scss"
+gem "sass"
+gem "compass"
 gem "bourbon"

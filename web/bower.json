@@ -27,6 +27,8 @@
     "react": "~0.13.2",
     "font-awesome": "~4.3.0",
     "nvd3": "~1.7.1",
-    "foundation": "~5.5.1"
+    "foundation": "~5.5.1",
+    "vue": "~0.11.8",
+    "threejs": "*"
   }
 }
