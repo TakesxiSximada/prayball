@@ -9,7 +9,7 @@ from .models import (
     )
 
 
-@view_config(route_name='ping')
+@view_config(route_name='api.ping')
 def ping_point(request):
     return Response(body='OK')
 
