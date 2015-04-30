@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="lib/react/react.js"></script>
+    <script src="lib/react/JSXTransformer.js"></script>
   </head>
+
   <body>
-    <h1>OK</h1>
+    <div id="example"></div>
+    <script type="text/jsx">
+      React.render(
+          <h1>pray ball</h1>,
+          document.getElementById('example')
+      );
+    </script>
   </body>
 </html>
