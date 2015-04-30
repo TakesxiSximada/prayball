@@ -1,0 +1,29 @@
+{
+  "name": "prayball",
+  "version": "0.0.0",
+  "authors": [
+    "TakesxiSximada <takesxi.sximada@gmail.com>"
+  ],
+  "description": "happy baseball",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "baseball"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.13.2"
+  }
+}
