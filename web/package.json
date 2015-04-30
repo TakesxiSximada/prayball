@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bower": "^1.4.1",
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "react-tools": "^0.13.2"
   }
 }
