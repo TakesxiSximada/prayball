@@ -22,6 +22,13 @@ gulp.task('template', function (){
     bower_to_lib({'': ''});
 });
 //--------------------------------
+gulp.task('foundation', function (){
+    bower_to_lib({
+        'foundation/js/**': 'foundation/js',
+        'foundation/css/**': 'foundation/css',
+        'foundation/scss/**': 'foundation/scss',
+    });
+});
 
 gulp.task('spin.js', function (){
     bower_to_lib({'spin.js/spin.js': 'spin.js/'});
