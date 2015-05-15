@@ -48,5 +48,6 @@ setup(
     test_require=get_requirements('requirements/test.txt'),
     entry_points='''
     [console_scripts]
+    pray = pray.scripts:main
     '''
     )
