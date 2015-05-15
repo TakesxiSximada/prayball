@@ -33,6 +33,7 @@ icon_team = {
     'cg_2012.png': 'GIANTS',
     }
 
+
 class TeamIcon(enum.Enum):
     LIONS = 'pl_2012.png'
     FIGHTERS = 'pf_2012.png'
