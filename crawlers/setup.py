@@ -6,20 +6,13 @@ from setuptools import (
     find_packages,
     )
 
+here = os.path.abspath(os.path.dirname(__file__))
+here_in = lambda path: os.path.join(here, path)
 
-def find_package_data(target, package_root):
-    return [
-        os.path.relpath(os.path.join(root, filename), package_root)
-        for root, dirs, files in os.walk(target)
-        for filename in files
-        ]
 
-src = 'src'
-install_requires = []
-test_require = []
-packages = find_packages(src)
-package_dir = {'': src}
-package_data = {}
+def get_requirements(path):
+    with open(path) as fp:
+        return list(map(lambda st: st.strip(), fp.readlines()))
 
 
 setup(
@@ -45,14 +38,14 @@ setup(
         'Programming Language :: Python :: 3.4',
         ],
     platforms='any',
-    packages=packages,
-    package_dir=package_dir,
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
     namespace_packages=[
         ],
-    package_data=package_data,
+    package_data={},
     include_package_data=True,
-    install_requires=install_requires,
-    test_require=test_require,
+    install_requires=get_requirements('requirements/install.txt'),
+    test_require=get_requirements('requirements/test.txt'),
     entry_points='''
     [console_scripts]
     '''
